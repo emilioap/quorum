@@ -38,13 +38,12 @@ quorum.tests         -> Unit Tests (Moq & xUnit for testing services)
 
 ### 1️⃣ Prerequisites
 - **.NET 8 SDK** installed ([Download Here](https://dotnet.microsoft.com/download))
-- **Docker (optional, if using a database)**
 - **Visual Studio / VS Code / Rider**
 
 ### 2️⃣ Clone the Repository
 ```sh
- git clone https://github.com/emilioap/quorum-api.git
- cd quorum-api
+ git clone https://github.com/emilioap/quorum.git
+ cd quorum
 ```
 
 ### 3️⃣ Build and Run the Application
