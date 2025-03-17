@@ -3,6 +3,7 @@ using quorum.domain.Enums;
 using quorum.domain.Interfaces;
 using quorum.service;
 using Moq;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace quorum.tests
 {
@@ -10,11 +11,13 @@ namespace quorum.tests
     {
         private readonly Mock<IDataRepository> _mockRepo;
         private readonly LegislatorService _legislatorService;
+        private readonly IMemoryCache _memoryCache;
 
         public LegislatorServiceTests()
         {
             _mockRepo = new Mock<IDataRepository>();
-            _legislatorService = new LegislatorService(_mockRepo.Object);
+            _memoryCache = new MemoryCache(new MemoryCacheOptions());
+            _legislatorService = new LegislatorService(_mockRepo.Object, _memoryCache);
         }
 
         [Fact]

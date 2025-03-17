@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddSingleton<IDataRepository, DataRepository>();
 builder.Services.AddSingleton<IBillService, BillService>();
 builder.Services.AddSingleton<ILegislatorService, LegislatorService>();

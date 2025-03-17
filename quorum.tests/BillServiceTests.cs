@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using Microsoft.Extensions.Caching.Memory;
+using Moq;
 using quorum.domain.Entities;
 using quorum.domain.Enums;
 using quorum.domain.Interfaces;
@@ -10,11 +11,13 @@ namespace quorum.tests
     {
         private readonly Mock<IDataRepository> _mockRepo;
         private readonly BillService _billService;
+        private readonly IMemoryCache _memoryCache;
 
         public BillServiceTests()
         {
             _mockRepo = new Mock<IDataRepository>();
-            _billService = new BillService(_mockRepo.Object);
+            _memoryCache = new MemoryCache(new MemoryCacheOptions());
+            _billService = new BillService(_mockRepo.Object, _memoryCache);
         }
 
         [Fact]
