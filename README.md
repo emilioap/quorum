@@ -62,12 +62,3 @@ To run unit tests:
 ```sh
  dotnet test
 ```
-
-## 🛠️ Environment Variables (if needed)
-If you're using a database, set up a `.env` or `appsettings.json` file with the necessary configurations.
-
-## 🤝 Contributing
-Feel free to fork, submit issues, or contribute via pull requests!
-
-## 📄 License
-This project is open-source under the MIT License.
