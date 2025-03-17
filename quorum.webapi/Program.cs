@@ -16,9 +16,29 @@ builder.Services.AddSingleton<IDataRepository, DataRepository>();
 builder.Services.AddSingleton<IBillService, BillService>();
 builder.Services.AddSingleton<ILegislatorService, LegislatorService>();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "Quorum API",
+        Version = "v1",
+        Description = "API for managing legislators, bills, and votes",
+        Contact = new Microsoft.OpenApi.Models.OpenApiContact
+        {
+            Name = "Emilio Pagnoca",
+            Email = "emilio@hotmail.dk",
+            Url = new Uri("https://github.com/emilioap")
+        }
+    });
+
+    var xmlFilename = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+});
+
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
