@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quorum.webapi", "quorum.webapi.csproj", "{575445A7-E2BB-4BE6-BC7A-E575830383C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quorum.service", "..\quorum.service\quorum.service.csproj", "{0634D9D0-4286-406C-9554-C6C058A6DDD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quorum.domain", "..\quorum.domain\quorum.domain.csproj", "{C210270C-F28F-489F-84B9-85405D081F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quorum.infrastructure", "..\quorum.infrastructure\quorum.infrastructure.csproj", "{C27C279A-B9C9-45C3-8553-20BBBB3595FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quorum.tests", "..\quorum.tests\quorum.tests.csproj", "{8078729D-891E-4E03-84AF-4F9E4763EC9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{07912DB1-73A1-405B-B6F7-59188B01F779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Core", "2 - Core", "{7CF0CFDD-89F2-4EA0-9115-3590587FAA48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{160B809F-D90F-4DEB-8EF6-3A7F28408140}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Tests", "4 - Tests", "{D26BBF21-AEC5-41CA-8043-4D698C390481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{575445A7-E2BB-4BE6-BC7A-E575830383C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575445A7-E2BB-4BE6-BC7A-E575830383C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575445A7-E2BB-4BE6-BC7A-E575830383C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575445A7-E2BB-4BE6-BC7A-E575830383C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0634D9D0-4286-406C-9554-C6C058A6DDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0634D9D0-4286-406C-9554-C6C058A6DDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0634D9D0-4286-406C-9554-C6C058A6DDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0634D9D0-4286-406C-9554-C6C058A6DDD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C210270C-F28F-489F-84B9-85405D081F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C210270C-F28F-489F-84B9-85405D081F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C210270C-F28F-489F-84B9-85405D081F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C210270C-F28F-489F-84B9-85405D081F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27C279A-B9C9-45C3-8553-20BBBB3595FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27C279A-B9C9-45C3-8553-20BBBB3595FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27C279A-B9C9-45C3-8553-20BBBB3595FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27C279A-B9C9-45C3-8553-20BBBB3595FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8078729D-891E-4E03-84AF-4F9E4763EC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8078729D-891E-4E03-84AF-4F9E4763EC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8078729D-891E-4E03-84AF-4F9E4763EC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8078729D-891E-4E03-84AF-4F9E4763EC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{575445A7-E2BB-4BE6-BC7A-E575830383C3} = {07912DB1-73A1-405B-B6F7-59188B01F779}
+		{0634D9D0-4286-406C-9554-C6C058A6DDD3} = {7CF0CFDD-89F2-4EA0-9115-3590587FAA48}
+		{C210270C-F28F-489F-84B9-85405D081F79} = {7CF0CFDD-89F2-4EA0-9115-3590587FAA48}
+		{C27C279A-B9C9-45C3-8553-20BBBB3595FD} = {160B809F-D90F-4DEB-8EF6-3A7F28408140}
+		{8078729D-891E-4E03-84AF-4F9E4763EC9D} = {D26BBF21-AEC5-41CA-8043-4D698C390481}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B595842B-19C7-4C2C-9612-0B8DB20194DA}
+	EndGlobalSection
+EndGlobal

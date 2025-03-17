@@ -1,0 +1,6 @@
+@quorum.webapi_HostAddress = http://localhost:5030
+
+GET {{quorum.webapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
