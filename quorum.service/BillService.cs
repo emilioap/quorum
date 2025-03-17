@@ -26,7 +26,7 @@ namespace quorum.service
         {
             var opponents = _dataRepository.VoteResults
                 .Join(_dataRepository.Votes, vr => vr.VoteId, v => v.Id, (vr, v) => new { vr, v })
-                .Where(x => x.v.BillId == id && x.vr.VoteType == VoteTypeEnum.None)
+                .Where(x => x.v.BillId == id && x.vr.VoteType == VoteTypeEnum.Nay)
                 .Count();
 
             return await Task.FromResult(opponents);
